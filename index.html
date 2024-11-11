@@ -1,58 +1,33 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع مواقيت الصلاة والقبلة</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مواقيت الصلاة</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- شريط التنقل -->
-    <nav>
-        <h1>مواقيت الصلاة</h1>
-        <ul>
-            <li><a href="#prayer-times">أوقات الصلاة</a></li>
-            <li><a href="#qibla">اتجاه القبلة</a></li>
-            <li><a href="#azkar">الأذكار</a></li>
-            <li><a href="#calendar">التقويم</a></li>
-        </ul>
-        <button id="dark-mode-toggle">الوضع الليلي</button>
-    </nav>
+  <div class="container">
+    <h1>مواقيت الصلاة</h1>
+    <ul class="prayer-times">
+      <li>الفجر: <span id="fajr">00:00</span></li>
+      <li>الظهر: <span id="dhuhr">00:00</span></li>
+      <li>العصر: <span id="asr">00:00</span></li>
+      <li>المغرب: <span id="maghrib">00:00</span></li>
+      <li>العشاء: <span id="isha">00:00</span></li>
+    </ul>
+    
+    <h2>اتجاه القبلة</h2>
+    <button id="qibla-btn">حدد اتجاه القبلة</button>
+    <p id="qibla-direction"></p>
 
-    <!-- قسم أوقات الصلاة -->
-    <section id="prayer-times">
-        <h2>مواقيت الصلاة</h2>
-        <div id="times"></div>
-    </section>
+    <h2>الأذكار اليومية</h2>
+    <p id="dhikr">سبحان الله</p>
 
-    <!-- قسم القبلة -->
-    <section id="qibla">
-        <h2>اتجاه القبلة</h2>
-        <button onclick="findQibla()">حدد اتجاه القبلة</button>
-        <div id="qibla-direction"></div>
-    </section>
+    <h2>الوضع الليلي</h2>
+    <button id="dark-mode-btn">تفعيل الوضع الليلي</button>
+  </div>
 
-    <!-- قسم الأذكار -->
-    <section id="azkar">
-        <h2>الأذكار اليومية</h2>
-        <p id="azkar-text"></p>
-    </section>
-
-    <!-- قسم التقويم -->
-    <section id="calendar">
-        <h2>التقويم الهجري والميلادي</h2>
-        <p id="hijri-date"></p>
-        <p id="gregorian-date"></p>
-    </section>
-
-    <!-- قسم التقييم -->
-    <section id="feedback">
-        <h2>قيم الموقع</h2>
-        <div id="rating-stars"></div>
-        <textarea placeholder="أضف تعليقك"></textarea>
-        <button onclick="submitFeedback()">إرسال</button>
-    </section>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
