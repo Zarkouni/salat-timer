@@ -1,1 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
 
+nav {
+    background-color: #006d77;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    color: #fff;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+#dark-mode-toggle {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
